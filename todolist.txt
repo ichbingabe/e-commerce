@@ -1,0 +1,17 @@
+e-commerce project in Node.JS
+
+to do:
+    - Profile backend:
+        - User info,
+        - if seller:
+            - Available Products,
+            - Stars, 
+            - Items sold, 
+            - Description, 
+            - ...
+        
+        - if consumer:
+            - Purchased Items(history),
+            - Cart
+            - ...
+ 

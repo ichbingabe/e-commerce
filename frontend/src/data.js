@@ -1,5 +1,5 @@
-export default {
-    products: [
+const data = {
+     products : [
       {
         _id: '1',
         name: 'Slim Shirt',
@@ -41,3 +41,5 @@ export default {
       },
     ]
   }
+
+  export default data

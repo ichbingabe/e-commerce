@@ -1,9 +1,9 @@
-import data from './data'
 import React from 'react'
-import Product from './components/Product'
+import {  BrowserRouter as Router, Route  } from 'react-router-dom'
 
 function App() {
   return (
+    <Router>
     <div className="grid-container">
         <header className="row">
             <div>
@@ -15,16 +15,13 @@ function App() {
             </div>
         </header>
         <main>
-            <div>
-                <div className="row center">
-                    <Product key={product._id} product={product} />
-                </div>
-            </div>
+            
         </main>
         <footer className="row center">
             something
         </footer>
     </div>
+    </Router>
   );
 }
 

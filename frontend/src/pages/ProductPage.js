@@ -16,7 +16,7 @@ export default function ProductPage() {
   }
   return (
     <div>
-        <div className="row">
+        <div className="row top">
           <div className="col-2">
             <img className="large"src={product.image} alt={product.name} />
           </div>
@@ -62,7 +62,7 @@ export default function ProductPage() {
                   {product.quantity > 0 ? (
                     <button className='primary block'>Add to Cart</button>
                   ) : (
-                    <button className='primary block'>Tell me when is available</button>
+                    <button className='secondary block'><span>Tell me when is available</span></button>
                   )
                 }
                 </li>

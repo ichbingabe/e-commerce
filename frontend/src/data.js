@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      _id: '1',
+      _id: ' ',
       name: 'Slim Shirt',
       category: 'Shirts',
       image: '../public/p1.jpg',
@@ -51,7 +51,7 @@ export default {
       quantity: 1
     },
     {
-      _id: '4',
+      _id: '10',
       name: "Call Of Duty WWII",
       description: "Call of Duty: WWII is the fourteenth game in the Call of Duty franchise and Sledgehammer Games' second to be developed in a three-year development cycle. Set during World War II, it tells the story of an unbreakable brotherhood of common men fighting to preserve freedom in a world on the brink of tyranny.",
       numReviews: 10,

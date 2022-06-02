@@ -29,7 +29,7 @@ body{
 
 header{
   grid-area: header;
-  background-color: lightskyblue;
+  background-color: #b0b0ac;
 }
 
 header a{
@@ -44,7 +44,7 @@ main{
 
 footer{
   grid-area: footer;
-  background-color: lightskyblue;
+  background-color: #b0b0ac;
   color: aliceblue;
 }
 
@@ -57,6 +57,18 @@ footer{
 
 .row.center{
   justify-content: center;
+}
+
+.row.top {
+  align-items: flex-start;
+}
+
+.col-1{
+  flex: 1 1 25rem;
+}
+
+.col-2{
+  flex: 2 1 50rem;
 }
 
 a{
@@ -73,12 +85,53 @@ a.brand{
   font-weight: bold;
 }
 
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li{
+  margin-top: 2rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+button:hover {
+  padding-right: 12rem;
+}
+
+button.primary{
+  background-color: #fec65b;
+}
+
+button.secundary{
+  background-color: #6b6b6b;
+}
+
+button.block{
+  width: 100%;
+}
+
 img{
   border-radius: 0.5rem;
 }
 
 img.medium{
   max-width: 29rem;
+  width: 100%;
+}
+
+img.large{
   width: 100%;
 }
 

@@ -57,7 +57,7 @@ export default {
       numReviews: 10,
       category: 'First-person shooter',
       brand: 'Activision',
-      rating: 4.5,
+      rating: 1.5,
       price: 249.99,
       score: 205,
       image: require("./images/call-of-duty-wwii.png"),

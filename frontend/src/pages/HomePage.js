@@ -1,38 +1,31 @@
 import React from 'react'
 import data from '../data'
 import Product from '../components/Product'
+import Rating from '../components/Rating'
 
 export default function HomePage() {
-  const produto = [
-    {
-      _id: '1',
-      name: 'Slim Shirt',
-      category: 'Shirts',
-      image: './images/p1.jpg',
-      price: 60,
-      brand: ' Nike',
-      rating: 4.5,
-      numReviews: 10
-    },
-    {
-      _id: '2',
-      name: 'Fit Shirt',
-      category: 'Shirts',
-      image: './images/p1.jpg',
-      price: 50,
-      brand: ' Nike',
-      rating: 4.2,
-      numReviews: 5
-    }
-  ]
-
   return (
     <div>
-        <div className="row center">
-            {produto.map((product) => (
-            <Product key={product._id}/>
-            ))}
-        </div>
-</div>
+      <div className="row center">
+        <React.Fragment>
+          {data.products.map((product) =>
+              <div key={product._id} className="card">
+              <a href={`/product/${product._id}`}>
+                  <img className="medium" src={product.image} alt={product.name} />
+              </a>
+              <div className="card-body">
+                  <a href={`/product/${product._id}`}>
+                      <h2>{product.name}</h2>
+                  </a>
+                  <Rating rating={ product.rating } numReviews={ product.numReviews }/>
+                  <div className="desccription">{product.description}</div>
+                  <div className="price">$ {product.price}</div>
+                  <div className="quatity"></div>
+              </div>
+          </div>
+          )}
+        </React.Fragment>  
+      </div>
+    </div>
   )
 }

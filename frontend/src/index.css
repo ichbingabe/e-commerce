@@ -140,6 +140,7 @@ img.large{
   background-color: gainsboro;
   border-radius: 0.5rem;
   margin: 1rem;
+  width: 20%;
 }
 
 .card-body{

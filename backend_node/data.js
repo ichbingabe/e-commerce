@@ -4,7 +4,7 @@ export default {
         _id: ' ',
         name: 'Slim Shirt',
         category: 'Shirts',
-        image: '../public/p1.jpg',
+        image: 'require("./images/p1.jpg")',
         price: 60,
         brand: ' Nike',
         rating: 4.5,
